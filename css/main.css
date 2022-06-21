@@ -1,44 +1,140 @@
-
 body {
-    background-color: rgb(255, 229, 180)
+    background-color: rgb(255, 229, 180);
 }
 
 header {
     font-size: 5em;
-
     font-family: 'Kdam Thmor Pro', sans-serif;
     background-color: rgb(58, 91, 160);
     color: rgb(255, 165, 0);
     height: 95px;
 }
 
+header ul {
+    list-style-type: none;
+    font-size: 0.3em;
+    position: sticky;
+    float: left;
+    left: 950px; 
+    top: 15px;
+}
+
+header ul li {   /* ---------> Header Navigation elements */
+    float: left;
+    margin-left: 20px;
+    padding-right: 10px;
+    border-right: 4px solid seagreen;
+}
+header ul li a{ /* ---------> Header Navigation elements : LİNK */
+    text-decoration: none;
+    color: rgb(255, 165, 0);
+    transition: 0.8s;
+}
+header ul li :hover { 
+    box-shadow: 0 4px 0 rgb(255, 165, 0) ;
+    transition: 0.8s;
+}
+
 header span {
     position: absolute;
     left: 150px;
-    top:-2px;
+    top: -2px;
 }
 
 footer {
     background-color: rgb(31, 70, 144);
     text-align: center;
-    font-family: 'Kdam Thmor Pro', sans-serif;  
+    font-family: 'Kdam Thmor Pro', sans-serif;
     color: rgb(255, 165, 0);
     font-size: 1.5em;
     position: fixed;
-    left:0;
+    left: 0;
     bottom: 0;
     height: 100px;
     width: 100%;
 }
 
-footer p  {
-    padding:5px 0;
+footer p {
+    padding: 5px 0;
 }
-/* All İd are start here*/
-#head-logo{
-    position: absolute;
-    left:20px;
-}
-#hero-content{
 
+table,tr,th,td{
+    margin: 150px auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: rgba(26, 24, 25, 0.199);
+    padding: 40px;
+  
+}
+table th{
+    background-color: rgba(26, 24, 25, 0.658);
+}
+
+
+
+/* ############################################  All İd are start here ################################### */
+#head-logo {
+    position: absolute;
+    left: 20px;
+}
+
+#hero-content {                        /*  İndex.html content*/
+    font-family: sans-serif Verdana, Geneva, Tahoma;
+    font-size: 2em;
+    font-stretch: ultra-expanded;
+    color:#1F4690;
+    width: 600px;
+    height: auto;
+    border-radius: 5px;
+    margin: 80px auto;
+}
+
+#hero-content:hover {                   /*index.html content*/
+    box-shadow: 10px 5px 5px rgb(31, 70, 144);
+    transition: 0.8s;
+}
+
+#Hero-image{                           /* index.html content      */
+    float: left;
+    width:400px;
+    margin-left: 20px;
+}
+#Contact-id{                          /*  Contact.html content     */
+   position: absolute;
+   left: 350px;
+   top: 250px;
+   background-color: Lightgrey;
+   border: 2px solid grey;
+   padding: 50px;
+   border-radius: 10px;
+}
+#Contact-id:hover{
+    box-shadow: 10px 5px 5px rgb(31, 70, 144);
+    transition: 0.8s;
+}
+
+#Blockquote-phones{
+    border-left:3px solid orange;
+    background-color: rgb(253, 218, 152);
+    position: absolute;
+    left:30px;
+    top:160px;
+    font-size: 1.5em;
+}
+
+/* .....................................  ALL CLASSES ARE HERE  ...................................... */
+
+.caption-inner-phoneimg{
+    position: relative;
+    left: 80px;
+    top:10px;
+    font-family: sans-serif Verdana, Geneva, Tahoma;
+    font-weight: bold;
+    color: beige
+    height:240px; 
+    width: 330px;  
+}
+.phone-price {
+    font-weight: bolder;
+    font-size: 2em;
 }
