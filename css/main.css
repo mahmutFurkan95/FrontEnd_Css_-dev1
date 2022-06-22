@@ -1,5 +1,7 @@
 body {
     background-color: rgb(255, 229, 180);
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -38,7 +40,7 @@ header ul li :hover {
 header span {
     position: absolute;
     left: 150px;
-    top: -2px;
+    top: -8px;
 }
 
 footer {
